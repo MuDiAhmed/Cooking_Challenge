@@ -1,0 +1,15 @@
+{
+  "files": [
+    "./typeScript/**/*.ts"
+  ],
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es5",
+    "noImplicitAny": true,
+    "sourceMap": false,
+    "declaration": false,
+    "noLib": false,
+    "outDir": "./web/js",
+    "rootDir":"typeScript"
+  }
+}
