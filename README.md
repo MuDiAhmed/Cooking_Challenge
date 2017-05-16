@@ -1,24 +1,24 @@
 Cooking Challenge
 =================
-##Components
+## Components
 * Symfony 3.2
 * Angular 1.6
 * SCSS
 * TypeScript
 
-##Requirements
+## Requirements
 * php >= 5.4
 * node 7.2.0
 * bower
 * gulp
 
-##Project Hierarchy
+## Project Hierarchy
 * ./app (Symfony configs + twig template files)
 * ./front-end (Angular + static files)
 * ./src (Symfony controllers + entities)
 * ./web (web root folder)
 
-##Instructions
+## Instructions
 * `cd <app_root_path>`
 * run `sudo composer install` to install the required packages  
 * create database user `cooking_challenge` pass `cook_chal` with all privileges  
