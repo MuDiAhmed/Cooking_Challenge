@@ -1,6 +1,6 @@
 {
   "files": [
-    "./typeScript/**/*.ts"
+    "./front-end/typeScript/**/*.ts"
   ],
   "compilerOptions": {
     "module": "commonjs",
@@ -10,6 +10,6 @@
     "declaration": false,
     "noLib": false,
     "outDir": "./web/js",
-    "rootDir":"typeScript"
+    "rootDir":"front-end/typeScript"
   }
 }

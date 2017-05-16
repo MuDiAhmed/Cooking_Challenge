@@ -1,0 +1,36 @@
+@media screen and (min-width: 1200px){
+  .grid_6_lg{
+    width: 50%;
+  }
+}
+@media screen and (max-width: 1200px){
+  .grid_6_lg{
+    width: 50%;
+  }
+}
+@media screen and (max-width: 992px){
+  .grid_6_md{
+    width: 50%;
+  }
+}
+@media screen and (max-width: 768px){
+  html{
+    font-size: 12px;
+  }
+  .grid_12_sm{
+    width: 100%;
+  }
+  .reg_form_wrapper {
+    .reg_form {
+      min-height: inherit !important;
+    }
+  }
+}
+@media screen and (max-width: 576px){
+  html{
+    font-size: 10px;
+  }
+  .grid_12_xs{
+    width: 100%;
+  }
+}

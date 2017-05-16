@@ -1,0 +1,49 @@
+<div class="full_page_size">
+    <div class="registration_wrapper">
+        <div class="grid_6_lg grid_6_md grid_12_sm">
+            <div class="slogan">
+                <p>
+                    Glad arabic cooking challenge 2013
+                </p>
+            </div>
+        </div>
+        <div class="grid_6_lg grid_6_md grid_12_sm reg_form_wrapper">
+            <form class="reg_form" ng-submit="register(user)">
+                <div class="reg_form_title_wrapper">
+                    <h3>
+                        So you think you can cook?
+                    </h3>
+                    <img ng-src="/images/spon.png">
+                    <h4>
+                        Share your signature dish and make it to the 2013 glad cooking challenge
+                    </h4>
+                </div>
+                <div class="form_ele_wrapper">
+                    <label class="form_ele_label">Name:</label>
+                    <input type="text" ng-model="user.name" class="form_ele_input">
+                </div>
+                <div class="form_ele_wrapper">
+                    <label class="form_ele_label">Email:</label>
+                    <input type="text" ng-model="user.email" class="form_ele_input">
+                </div>
+                <div class="form_ele_wrapper">
+                    <label class="form_ele_label">Country:</label>
+                    <input type="text" ng-model="user.country" class="form_ele_input">
+                </div>
+                <div class="form_ele_wrapper">
+                    <label class="form_ele_label">Nationality:</label>
+                    <input type="text" ng-model="user.nationality" class="form_ele_input">
+                </div>
+                <div class="form_ele_wrapper">
+                    <label class="form_ele_label">Mobile:</label>
+                    <input type="text" ng-model="user.mobile" class="form_ele_input">
+                </div>
+                <div class="reg_form_submit">
+                    <div class="reg_form_submit_inner">
+                        <input type="submit" value="Submit">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

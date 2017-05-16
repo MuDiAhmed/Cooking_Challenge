@@ -1,0 +1,73 @@
+.registration_wrapper{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("/images/registration-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  .slogan{
+    width: 175px;
+    height: 175px;
+    font-size: 1em;
+    top: 15px;
+    left: 15px;
+  }
+  .reg_form_wrapper{
+    .reg_form{
+      padding: 10px 20px;
+      margin: 0 10px;
+      background-color: $lightColor;
+      min-height: 100vh;
+      box-sizing: border-box;
+      .reg_form_title_wrapper{
+        text-align: center;
+        margin-bottom: 30px;
+      }
+      .form_ele_wrapper{
+        margin: 10px 0;
+        overflow-y: auto;
+        &:first-child{
+          margin-top: 0;
+        }
+        .form_ele_label{
+          width: 30%;
+          display: inline-block;
+          text-align: right;
+          box-sizing: border-box;
+          float: left;
+          font-size: 1.2em;
+        }
+        .form_ele_input{
+          width: 70%;
+          display: inline-block;
+          box-sizing: border-box;
+          float: left;
+          padding: 10px 20px;
+          border: 0;
+        }
+      }
+      .reg_form_submit{
+        margin-top: 40px;
+        min-height: 50px;
+        div{
+          display: inline-block;
+          padding: 2px;
+          background: #de2e22;
+          float: right;
+          margin-right: -30px;
+        }
+        input{
+          padding: 1px 0;
+          width: 115px;
+          text-align: left;
+          padding-left: 7px;
+          border: 2px solid rgba(0,0,0,0.2);
+          background-color: #de2e22;
+          color: white;
+          font-weight: 600;
+          font-size: 1.1em;
+        }
+      }
+    }
+  }
+}
