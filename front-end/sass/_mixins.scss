@@ -1,0 +1,26 @@
+@mixin column_style($columns_count){
+  -webkit-column-count: $columns_count;
+  -moz-column-count: $columns_count;
+  column-count: $columns_count;
+}
+
+@mixin transition($time,$attr,$type){
+  -webkit-transition: $attr $time $type;
+  -moz-transition: $attr $time $type;
+  -o-transition: $attr $time $type;
+  -ms-transition: $attr $time $type;
+  transition: $attr $time $type;
+}
+
+@mixin box-sizing($type){
+  -webkit-box-sizing: $type;
+  -moz-box-sizing: $type;
+  box-sizing: $type;
+}
+
+
+@mixin background-size($type){
+  -webkit-background-size: $type;
+  -moz-background-size: $type;
+  background-size: $type;
+}

@@ -1,0 +1,49 @@
+<div class="gallery_wrapper inner_pg_wrapper full_page_size">
+    <div class="grid_3_lg grid_3_md grid_12_sm">
+        <div class="slogan">
+            <p>
+                Glad arabic cooking challenge 2013
+            </p>
+        </div>
+    </div>
+    <div class="grid_9_lg grid_9_md grid_12_sm">
+        <div class="gallery_inner_wrapper">
+            <div class="submit_dish">
+                <input type="submit" ng-click="submit_dish = true" value="Submit Your Dish">
+            </div>
+            <div class="gallery_title_wrapper">
+                <h3>
+                    So you think you can cook?
+                </h3>
+                <h2>
+                    Competition Gallery
+                </h2>
+                <h4>
+                    vote for your favourite dish or submit your own
+                </h4>
+            </div>
+            <div class="gallery_items_wrapper">
+                <div ng-repeat="image in images" class="image">
+                    <img ng-src="/images/{{image.path}}">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div  class="add_dish_form_wrapper" ng-class="{show:submit_dish}">
+        <div class="dish_form_bg" ng-click="submit_dish = false">
+
+        </div>
+        <div class="dish_form">
+            <h2>
+               Submit Your Dish
+            </h2>
+            <p>
+                Add an awesome dish to our collection to get the highest likes number
+            </p>
+            <form ng-submit="addDish(userDish)">
+                <input type="file" name="image" id="image" file-model="userDish">
+                <input type="submit" value="Add Dish">
+            </form>
+        </div>
+    </div>
+</div>

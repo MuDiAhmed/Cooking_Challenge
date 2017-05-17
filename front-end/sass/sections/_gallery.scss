@@ -1,0 +1,111 @@
+.gallery_wrapper{
+  .gallery_inner_wrapper{
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: $lightColor;
+    min-height: 100vh;
+    @include box-sizing(border-box);
+    .submit_dish{
+      display: inline-block;
+      padding: 2px;
+      background: $redColor;
+      right: 0px;
+      position: absolute;
+      input{
+        padding: 1px 0;
+        width: auto;
+        text-align: left;
+        padding-left: 7px;
+        border: 2px solid rgba(0,0,0,0.2);
+        background-color: $redColor;
+        color: white;
+        font-weight: 600;
+        font-size: 1.1em;
+      }
+    }
+    .gallery_title_wrapper{
+      text-align: center;
+      margin-bottom: 30px;
+      h3,h4,h2{
+        margin: 10px 0;
+        text-transform: uppercase;
+      }
+      h3{
+        text-transform: capitalize;
+      }
+    }
+    .gallery_items_wrapper{
+      @include column_style(3);
+      .image{
+        /* -webkit-backface-visibility: hidden; */
+        -moz-backface-visibility: hidden;
+        -ms-backface-visibility: hidden;
+        backface-visibility: hidden;
+        background-position: center center;
+        @include background-size(cover);
+        @include box-sizing(border-box);
+        cursor: pointer;
+        display: inline-block;
+        line-height: 0;
+        max-width: 100%;
+        opacity: .7;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+        filter: alpha(opacity=70);
+        padding: 3px;
+        @include transition(0.2s,all,ease-in);
+        vertical-align: top;
+        width: 100%;
+        &:hover{
+          opacity: 1;
+        }
+        img{
+          width: 100%;
+        }
+      }
+    }
+  }
+  .add_dish_form_wrapper{
+    width: 100%;
+    min-height: 100vh;
+    position: fixed;
+    opacity: 0;
+    z-index: -5;
+    @include transition(1s,all, ease-in-out);
+    &.show{
+      opacity: 1;
+      z-index: 5;
+    }
+    .dish_form_bg{
+      width: 100%;
+      min-height: 100vh;
+      background: rgba(0,0,0,.5);
+      position: absolute;
+      z-index: -1;
+    }
+    .dish_form{
+      width: 80%;
+      margin: 0 auto;
+      text-align: center;
+      background: white;
+      padding: 10px 20px;
+      @include box-sizing(border-box);
+      top: 10%;
+      position: absolute;
+      border-radius: 10px;
+      color: rgba(0, 0, 0, 0.6);
+      left: 10%;
+      input[type="submit"]{
+        display: block;
+        background: $redColor;
+        border: 0;
+        padding: 10px 20px;
+        color: white;
+        margin: 20px auto;
+        cursor: pointer;
+      }
+      h2,p{
+        margin: 20px 0;
+      }
+    }
+  }
+}

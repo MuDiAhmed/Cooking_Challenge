@@ -14,11 +14,12 @@
         {% block javascripts %}
             <script src="{{ asset('bower_components/angular/angular.min.js') }}"></script>
             <script src="{{ asset('bower_components/angular-ui-router/release/angular-ui-router.min.js') }}"></script>
+            <script src="{{ asset('bower_components/angular-resource/angular-resource.min.js') }}"></script>
             <script src="{{ asset('js/app.js') }}"></script>
             <script src="{{ asset('js/controllers.js') }}"></script>
-            {#<script src="{{ asset('js/services.js') }}"></script>#}
-            {#<script src="{{ asset('js/config.js') }}"></script>#}
-            {#<script src="{{ asset('js/directive.js') }}"></script>#}
+            <script src="{{ asset('js/services.js') }}"></script>
+            <script src="{{ asset('js/configs.js') }}"></script>
+            <script src="{{ asset('js/directives.js') }}"></script>
         {% endblock %}
     </body>
 </html>

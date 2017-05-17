@@ -1,24 +1,11 @@
 .registration_wrapper{
-    width: 100%;
-    min-height: 100vh;
-    background-image: url("/images/registration-bg.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-  .slogan{
-    width: 175px;
-    height: 175px;
-    font-size: 1em;
-    top: 15px;
-    left: 15px;
-  }
   .reg_form_wrapper{
     .reg_form{
       padding: 10px 20px;
       margin: 0 10px;
       background-color: $lightColor;
       min-height: 100vh;
-      box-sizing: border-box;
+      @include box-sizing(border-box);
       .reg_form_title_wrapper{
         text-align: center;
         margin-bottom: 30px;
@@ -33,14 +20,14 @@
           width: 30%;
           display: inline-block;
           text-align: right;
-          box-sizing: border-box;
+          @include box-sizing(border-box);
           float: left;
           font-size: 1.2em;
         }
         .form_ele_input{
           width: 70%;
           display: inline-block;
-          box-sizing: border-box;
+          @include box-sizing(border-box);
           float: left;
           padding: 10px 20px;
           border: 0;

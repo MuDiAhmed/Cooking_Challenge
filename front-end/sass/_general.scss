@@ -1,12 +1,13 @@
 *{
   margin: 0;
   padding: 0;
+  font-family: monospace;
 }
 .full_page_size{
   width: 100%;
   min-height: 100vh;
   background-image: url("/images/index-bg.jpg");
-  background-size: cover;
+  @include background-size(cover);
   background-repeat: no-repeat;
   background-position: center;
   .slogan{
@@ -26,13 +27,23 @@
     position: relative;
     max-width: 360px;
     max-height: 360px;
-    box-sizing: border-box;
+    @include box-sizing(border-box);
     display: table;
     margin-bottom: 30px;
     p{
       display: table-cell;
       vertical-align: middle;
     }
+  }
+}
+.inner_pg_wrapper{
+  background-image: url("/images/registration-bg.jpg");
+  .slogan{
+    width: 175px;
+    height: 175px;
+    font-size: 1em;
+    top: 15px;
+    left: 15px;
   }
 }
 [class^="grid"]{

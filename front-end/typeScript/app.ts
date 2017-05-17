@@ -1,6 +1,8 @@
 let app = angular.module('MyApp',[
+    'services',
     'controllers',
-    'ui.router'
+    'ui.router',
+    'directives'
 ]);
 
 app.config(['$stateProvider', '$urlRouterProvider',
@@ -15,6 +17,11 @@ app.config(['$stateProvider', '$urlRouterProvider',
                 url: '/register',
                 templateUrl: 'partials/register.html',
                 controller: 'RegisterController'
+            })
+            .state('gallery', {
+                url: '/gallery',
+                templateUrl: 'partials/gallery.html',
+                controller: 'GalleryController'
             });
         $urlRouterProvider.otherwise('/');
     }
