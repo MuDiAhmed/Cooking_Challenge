@@ -32,4 +32,7 @@ open `config/parameters.yml`
 * run `bower install` to install bower components
 * run `gulp development` to build required front-end files
 * run `php bin/console server:run` to start server  
-* go to `localhost:8000` and enjoy
+* go to `localhost:8000` and enjoy  
+**Note:**
+if you faced any problem after running server 
+run `sudo chmod -R 777 ./var/cache/` to change permission for cache folder 
