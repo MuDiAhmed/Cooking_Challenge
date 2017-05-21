@@ -18,7 +18,7 @@ use AppBundle\Entity\Users;
 class UsersController extends FOSRestController
 {
     /**
-     * @Rest\Get("/user/{id}")
+     * @Rest\Get("/users/{id}", name="get_user")
      */
     public function getAction($id)
     {
@@ -29,7 +29,7 @@ class UsersController extends FOSRestController
         return $singleresult;
     }
     /**
-     * @Rest\Post("/users")
+     * @Rest\Post("/users", name="post_users")
      */
     public function postAction(Request $request)
     {
